@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('/mpesa/password','App\Http\Controllers\MpesaController@lipaNaMpesaPassword');
-Route::post('/mpesa/new/access/token','App\Http\Controllers\MpesaController@newAccessToken');
-Route::post('/mpesa/stk/push','App\Http\Controllers\MpesaController@stkPush')->name('lipa');
-Route::post('/stk/push/callback/url', 'App\Http\Controllers\MpesaController@MpesaRes');
+Route::get('/mpesa/password','MpesaController@lipaNaMpesaPassword');
+Route::post('/mpesa/new/access/token','MpesaController@newAccessToken');
+Route::post('/mpesa/stk/push','MpesaController@stkPush')->name('lipa');
+Route::post('/stk/push/callback/url', 'MpesaController@MpesaRes');

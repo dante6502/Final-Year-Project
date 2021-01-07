@@ -69,7 +69,7 @@ function getPro(){
                 </a>
             </h3>
             <p class='price'>
-             $ $product_price
+             Ksh. $product_price
             </p>
             <p class='button'>
               <a  class='btn btn-default' href='details.php?product_id=$product_id'>

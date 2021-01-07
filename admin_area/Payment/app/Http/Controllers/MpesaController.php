@@ -51,12 +51,12 @@ class MpesaController extends Controller
     public function stkPush(Request $request)
     {  
       
-            // $user = $request->user;
-            // $amount = $request->amount;
-            // $phone =  $request->phone;
-            // $formatedPhone = substr($phone, 1);//726582228
-            // $code = "254";
-            // $phoneNumber = $code.$formatedPhone;//254726582228
+            //$user = $request->user;
+            //$amount = $request->amount;
+            //$phone =  $request->phone;
+            //$formatedPhone = substr($phone, 1);//726582228
+            //$code = "254";
+            //$phoneNumber = $code.$formatedPhone;//254726582228
 
       
        
@@ -68,12 +68,12 @@ class MpesaController extends Controller
             'Password' => $this->lipaNaMpesaPassword(),
             'Timestamp' => Carbon::rawParse('now')->format('YmdHms'),
             'TransactionType' => 'CustomerPayBillOnline',
-            'Amount' => '2',
-            'PartyA' => '254790765441',
+            'Amount' => '1',
+            'PartyA' => '254790765441', 
             'PartyB' => 174379,
-            'PhoneNumber' =>'254790765441', 
-            'CallBackURL' => 'https://ea7e067137df.ngrok.io/api/stk/push/callback/url',
-            'AccountReference' => "TUK ONLINE SHOPPING",
+            'PhoneNumber' => '254790765441', 
+            'CallBackURL' => 'https://eja7e067137df.ngrok.io/api/stk/push/callback/url',
+            'AccountReference' => "Simon's Tech School Payment",
             'TransactionDesc' => "lipa Na M-PESA"
         ];
 
@@ -88,7 +88,7 @@ class MpesaController extends Controller
         curl_setopt($curl, CURLOPT_POST, true);
         curl_setopt($curl, CURLOPT_POSTFIELDS, $data_string);
         $curl_response = curl_exec($curl);
-        return $curl_response;
+        return redirect('/confirm'); 
 
         
         
@@ -110,3 +110,6 @@ class MpesaController extends Controller
      }
     }
 
+
+    
+    

@@ -41,7 +41,7 @@ if(isset($_GET['product_id'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TUK ONLINE SHOPPING SYSTEM</title>
     <link rel="stylesheet" href="styles/bootstrap-337.min.css">
-    <link rel="stylesheet" href="font-awesome/css/fontawesome.min.css"> 
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' />
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -67,7 +67,7 @@ if(isset($_GET['product_id'])){
        <div class="col-md-6"><!--col-md-6 begin -->
             <ul class="menu"><!-- cmenu Begin -->
             <li>
-               <a href="customer_register.php">Register</a>
+               <a href="../customer_register.php">Register</a>
             </li>
             <li>
                <a href="customer/my_account.php">My Account</a>
@@ -109,13 +109,13 @@ if(isset($_GET['product_id'])){
        <div class="navbar-collapse collapse" id="navigation" ><!--navbar-collapse collapse begin-->
             <div class="padding-nav"><!--paddidng nav begin -->
                <ul class="nav navbar-nav left"><!--nav navbar-nav left begin -->
+                    <li >
+                        <a href="../index.php">Home</a>
+                    </li>
+                    <li >
+                        <a href="../shop.php">Shop</a>
+                    </li>
                     <li class="active" >
-                        <a href="index.php">Home</a>
-                    </li>
-                    <li >
-                        <a href="shop.php">Shop</a>
-                    </li>
-                    <li >
                        <?php
 
                        if(isset($_SESSION['customer_email'])){
@@ -127,10 +127,10 @@ if(isset($_GET['product_id'])){
                        ?>
                     </li>
                     <li  >
-                        <a href="cart.php">Shopping Cart</a>
+                        <a href="../cart.php">Shopping Cart</a>
                     </li>
                     <li >
-                        <a href="contact.php">Contact Us</a>
+                        <a href="../contact.php">Contact Us</a>
                     </li>
                </ul> <!--nav navbar-nav left finish -->  
             </div><!--paddidng nav finish -->

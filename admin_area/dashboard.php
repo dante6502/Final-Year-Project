@@ -27,7 +27,7 @@
       <a href="index.php?view_products"><!--a href begin -->
         <div class="panel-footer"><!--panel-footer begin -->
           <span class="pull-left"><!--pull-left begin -->
-            View Detais
+            View Details
           </span><!--pull-left finish-->
           <span class="pull-right"><!--pull-right begin -->
             <i class="fa fa-arrow-circle-cirle-right"></i>
@@ -53,7 +53,7 @@
       <a href="index.php?view_customers"><!--a href begin -->
         <div class="panel-footer"><!--panel-footer begin -->
           <span class="pull-left"><!--pull-left begin -->
-            View Detais
+            View Details
           </span><!--pull-left finish-->
           <span class="pull-right"><!--pull-right begin -->
             <i class="fa fa-arrow-circle-cirle-right"></i>
@@ -79,7 +79,7 @@
       <a href="index.php?view_product_cats"><!--a href begin -->
         <div class="panel-footer"><!--panel-footer begin -->
           <span class="pull-left"><!--pull-left begin -->
-            View Detais
+            View Details
           </span><!--pull-left finish-->
           <span class="pull-right"><!--pull-right begin -->
             <i class="fa fa-arrow-circle-cirle-right"></i>
@@ -105,7 +105,7 @@
       <a href="index.php?view_orders"><!--a href begin -->
         <div class="panel-footer"><!--panel-footer begin -->
           <span class="pull-left"><!--pull-left begin -->
-            View Detais
+            View Details
           </span><!--pull-left finish-->
           <span class="pull-right"><!--pull-right begin -->
             <i class="fa fa-arrow-circle-cirle-right"></i>

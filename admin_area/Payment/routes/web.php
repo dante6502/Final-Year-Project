@@ -18,12 +18,12 @@ Route::get('/', function () {
 });
 
 Route::get('/pay', function () {
-    return view('pay'); /* this displays the payment form thats my checkout.php page..work on it later */
+    return view('pay');
 });
 Route::get('/confirm', function () {
-    return view('confirm');/* this displays the confirm form page*/
+    return view('confirm');
 });
-Route::post('/confirm', 'App\Http\Controllers\MpesaController@confirm')->name('confirm');/* this handles the confirm form page*/
+Route::post('/confirm', 'MpesaController@confirm')->name('confirm');
 
 Auth::routes();
 
