@@ -114,7 +114,7 @@
            <input type="number" value="254790765441" class="form-control" name="phonenumber" required>
      </div> <!-- form-group finish finish -->
      <div class="form-group">
-           <input type="submit" name="deposit" value="PAY NOW Ksh.<?php echo $total; ?>" class="btn btn-primary btn-lg mt-4"  class="form-control">
+           <input type="submit" name="submit" value="PAY NOW" class="btn btn-primary btn-lg mt-4"  class="form-control">
       </div>
  </form><!--form finish -->
 </div><!-- box Finish -->
